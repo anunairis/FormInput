@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- DOESNT WORK/ EMPTY THE INPUT FORM FTER SUBMIT 
+    <body onload='document.myform.email.focus()'> -->
+
+<body>
+    <div class="container">
+        <div class="container_overlay">
+            <form name="myform" action="#" class="form-container" id="form-container" method="get">
+                <h2>Set up your account</h2>
+                <div class="form-input">
+                    <input id="name" name="name" placeholder="Name" type="text" class="form-input-text" />
+                    <span id="nameOutput"></span>
+                </div>
+                <div class="form-input">
+                    <input id="email" name="email" placeholder="Email" type="text" class="form-input-text" />
+                    <span id="emailOutput"></span>
+                </div>
+                <div class="form-input">
+                    <input id="phone" name="phone" placeholder="Phone number" type="tel" class="form-input-text" />
+                    <span id="phoneOutput"></span>
+                    <!-- pattern="[0-9]{12}"  -->
+                </div>
+
+                <div class="check-div">
+                    <input type="checkbox" class="check" />
+                    <span class="terms">
+                        I have read and agree to the <a href="">Terms of Use</a> and
+                        <a href=""> Privacy Policy</a></span>
+                    <!-- <input type="button" value="Submit" id="btn"> -->
+                </div>
+                <button type="button" class="btn" id="btn">Submit</button>
+
+                <div class="social">
+                    <span>-------------- or sign up with social media -----------</span>
+                </div>
+                <icons class="icons">
+                <button class="facebook">
+                    <i class="fa fa-facebook"></i>
+                    Facebook
+                </button>
+                <button class="twitter">
+                    <i class="fa fa-twitter"></i>
+                    Twitter
+                </button>
+                <button class="google-plus">
+                    <i class="fa fa-google-plus"></i>
+                    Google
+                </button>
+                </icons>
+            </form>
+        </div>
+    </div>
+
+    <div id="demo">i</div>
+    <script src="js.js"></script>
+</body>
+
+</html>
